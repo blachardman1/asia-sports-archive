@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>完美体育 · 简明指南与访问说明</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #faf7f2;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2e2b26;
+            line-height: 1.7;
+            padding: 0 1.5rem 3rem;
+        }
+        .page-wrap {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        /* hero 区域 */
+        .hero {
+            background: #f0ebe3;
+            margin: 2rem -1.5rem 3rem;
+            padding: 3rem 1.5rem 2.5rem;
+            text-align: center;
+            border-bottom: 1px solid #d9d2c6;
+            border-top: 1px solid #d9d2c6;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #3f3a33;
+            margin-bottom: 0.4rem;
+        }
+        .hero .subhead {
+            font-size: 1rem;
+            color: #6b6258;
+            border-top: 1px solid #cbc2b4;
+            display: inline-block;
+            padding-top: 0.6rem;
+            margin-top: 0.3rem;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: #d6ccc0;
+            color: #2e2b26;
+            font-size: 0.75rem;
+            padding: 0.2rem 1.2rem;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            margin-top: 1rem;
+        }
+
+        /* 文章通用 */
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 400;
+            border-left: 4px solid #b5a898;
+            padding-left: 1rem;
+            margin: 2.5rem 0 1.2rem;
+            color: #3e352c;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+        .intro-para {
+            font-size: 1.05rem;
+            color: #3d3933;
+        }
+
+        /* 引用 / 提示框 */
+        .callout {
+            background: #ede7dd;
+            border-left: 6px solid #9f8f7a;
+            padding: 1.2rem 1.6rem;
+            margin: 1.8rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: normal;
+            color: #2f2b26;
+        }
+        .callout strong {
+            font-weight: 600;
+            color: #4d4238;
+        }
+
+        .tip-box {
+            background: #f4efe8;
+            border: 1px solid #d6ccbf;
+            padding: 1.2rem 1.5rem;
+            border-radius: 6px;
+            margin: 1.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .tip-box .tip-label {
+            display: inline-block;
+            background: #b7aa99;
+            color: #faf7f2;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.9rem;
+            border-radius: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+        }
+
+        /* 特征卡片区 */
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.8rem 0;
+        }
+        .feature-card {
+            flex: 1 1 200px;
+            background: #f6f2eb;
+            padding: 1.2rem 1rem 1rem;
+            border-radius: 4px;
+            border: 1px solid #ddd3c6;
+        }
+        .feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #4a4137;
+            border-bottom: 1px dotted #cbbfb0;
+            padding-bottom: 0.3rem;
+        }
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #4b443b;
+            margin-bottom: 0;
+        }
+
+        .faq-item {
+            margin: 1.2rem 0;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #4d4237;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item p {
+            margin: 0 0 0.8rem 0;
+            padding-left: 0.5rem;
+            color: #4d473f;
+        }
+
+        .footer-note {
+            border-top: 1px solid #d9cfc2;
+            padding-top: 2rem;
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #5b5248;
+        }
+        .footer-note a {
+            color: #4d3f32;
+            text-decoration: none;
+            border-bottom: 1px solid #b5a594;
+            transition: border 0.2s;
+        }
+        .footer-note a:hover {
+            border-bottom: 2px solid #7a6b5b;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero { padding: 2rem 1rem 1.8rem; margin-left: -1rem; margin-right: -1rem; }
+            body { padding: 0 1rem 2rem; }
+            .feature-grid { flex-direction: column; }
+            .callout { padding: 1rem 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <!-- hero 横幅 -->
+    <div class="hero">
+        <h1>完美体育</h1>
+        <div class="subhead">访问准备 · 内容概览 · 日常指引</div>
+        <div class="badge">简明指南</div>
+    </div>
+
+    <!-- 背景说明 -->
+    <p class="intro-para">
+        对于希望快速了解平台概况与访问方式的用户，这份说明整理了最基本的背景与建议。
+        以下内容均基于公开信息整理，不涉及任何内部操作指导，仅作为浏览前的辅助参考。
+    </p>
+
+    <h2 class="section-title">平台背景与定位</h2>
+    <p>
+        <a href="https://portal-wmsport.com" style="color:#4d3f32; text-decoration: underline; text-underline-offset: 3px;">完美体育</a> 是一个面向体育资讯与综合内容展示的站点，提供赛事动态、项目介绍及相关的专题阅读。
+        其页面结构围绕信息分类与导航效率展开，适合对体育内容有常规查阅需求的用户。
+        站点整体采用模块化布局，首页承载主要入口与重点摘要，方便快速定位感兴趣的方向。
+    </p>
+
+    <div class="callout">
+        <strong>提示</strong> —— 初次访问时，建议先浏览首页的分类导览区域，页面顶部通常设有主要板块索引，
+        这有助于理解信息组织方式，减少反复查找。
+    </div>
+
+    <!-- 三段自然介绍 —— 从“简明指南与访问提醒”角度 -->
+    <h2 class="section-title">访问前值得了解的几点</h2>
+    <p>
+        网站不强制注册即可阅读大部分内容，但部分互动或收藏功能可能需要创建账户。
+        登录入口位于页面右上方，流程符合常规表单标准。密码找回、邮箱验证等辅助功能均已开放。
+        如果你希望保持私密浏览，也可以直接查看公开内容，无需额外授权。
+    </p>
+
+    <div class="tip-box">
+        <span class="tip-label">访问提醒</span>
+        <p style="margin-bottom:0;">
+            确保浏览器为最新版本，并允许加载常规脚本与样式（无需额外插件）。移动端访问时，页面会自适应屏幕宽度，
+            横向菜单将折叠为汉堡图标。遇到加载延迟可尝试刷新或更换网络环境。
+        </p>
+    </div>
+
+    <!-- 特点卡片 —— 替换千篇一律的列表 -->
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>内容分类</h3>
+            <p>按运动项目、赛事周期、专题策划三种维度组织，减少信息过载。</p>
+        </div>
+        <div class="feature-card">
+            <h3>搜索辅助</h3>
+            <p>站内搜索支持关键词与模糊匹配，结果按相关度及时间排序。</p>
+        </div>
+        <div class="feature-card">
+            <h3>界面语言</h3>
+            <p>全站以中文为主，专有名词保留英文缩写，保持阅读一致性。</p>
+        </div>
+    </div>
+
+    <!-- FAQ 摘要 —— 保留自然语气 -->
+    <h2 class="section-title">常见疑问摘要</h2>
+
+    <div class="faq-item">
+        <strong>是否需要付费才能浏览所有内容？</strong>
+        <p>大部分资讯页面免费开放，部分深度专题或数据图表可能设置阅读限制，具体以页面标注为准。</p>
+    </div>
+    <div class="faq-item">
+        <strong>页面打不开或显示异常怎么办？</strong>
+        <p>首先确认网络连接正常，其次尝试清除浏览器缓存或使用隐私模式。若持续无法访问，可能是临时维护或区域网络限制，建议稍后重试。</p>
+    </div>
+    <div class="faq-item">
+        <strong>如何获取最新活动或更新通知？</strong>
+        <p>可关注站内公告栏或订阅页面底部的邮件提醒（如有）。目前没有第三方社交账号推送，所有通知均通过站内渠道发布。</p>
+    </div>
+
+    <!-- 页尾访问提示 —— 自然嵌入链接 -->
+    <div class="footer-note">
+        <p>
+            如需直接进入主站，可通过上方链接访问 <a href="https://portal-wmsport.com">完美体育</a>，首页提供完整的导航与精选内容。
+            本页仅为概括性介绍，具体功能与页面布局以实际站点为准。
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color: #796e61;">
+            · 信息整理日期：2025 · 页面仅供说明参考 ·
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
